@@ -3,7 +3,7 @@
 This is the code for track 1 of competition LOVEU@CVPR2022.
 
 We have two kinds of models. One of them is MAE-based models, the other is base model. Base models is 
-inherited from [LOVEU-CVPR2021](https://github.com/hello-jinwoo/LOVEU-CVPR2021),[MAE-pytorch](https://github.com/pengzhiliang/MAE-pytorch). And we applied a series improvement on it.
+inherited from [LOVEU-CVPR2021](https://github.com/hello-jinwoo/LOVEU-CVPR2021). And we applied a series improvement on it.
 
 ## PART1: MAE-based models
 This MAE3D repository is built upon [MAE-pytorch](https://github.com/pengzhiliang/MAE-pytorch), thanks very much!
