@@ -7,10 +7,12 @@ inherited from https://github.com/hello-jinwoo/LOVEU-CVPR2021. And we applied a 
 
 ## PART1: MAE-based models
 This MAE3D repository is built upon [MAE-pytorch](https://github.com/pengzhiliang/MAE-pytorch), thanks very much!
+```
 ./MAE3D/tools/prepare_data_MAE_2fps_img.py  # create 40 frame images
 ./MAE3D/tools/get_GEBD_class_data.py        # get pre-training / finetuning data
 ./MAE3D/run_main_pretraining3D.py           #  pre-training script
 ./MAE3D/run_main_class_finetuning3D.py      #  finetuning script
+```
 detail in ./MAE3D/README.md
 ## PART2: Base models
 
