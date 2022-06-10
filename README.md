@@ -30,7 +30,7 @@ You can downlaod our video feuatures [here](https://drive.google.com/drive/folde
 You may locate feature data in 'data' folder of this repository.
 
 ### Materials 
-You can download materials: TODO
+You can download models [here](https://drive.google.com/drive/folders/11OkI6SeRLd7Ewc9JyuoCUSHb29bu4foN).
 
 ### Implementation
 You can change some values in config.py in both models. 
@@ -50,8 +50,9 @@ python validate.py --model $MODEL_NAME --fold $FOLD_NUM --sigma $SIGMA_VALUE
 ```
 For example, 
 ```
-
+python validate.py --model model_main_fold_0_s_0.4_8397.pt --fold 0 --sigma 0.4
 ```
+And you will get the output f1:0.8397.
 
 <hr>
 
@@ -61,12 +62,12 @@ python validate.py --model_sf $MODEL_SF_NAME --model_tsn $MODEL_TSN_NAME --sigma
 ```
 For example, 
 ```
-todo
+python validate.py --model_sf model_sf_simple_fold_0_s_-1_8384.pt --model_tsn model_tsn_simple_fold_0_s_-1_8384.pt --sigma -1 --fold 0
 ```
-
+And you will get the output f1:0.8384
 
 ### Test with ensemble
-We predict the result by ensembling models from different folds(0~9) and model architecture(*using_similarity* and *sf_tsn_each_branch*).
+We predict the result by ensembling models from different folds(0~9) and model architecture(*using_similarity*, *sf_tsn_each_branch*, *mae-based*).
 
 We save a probability score for each model and use it to produce final prediction.
 
@@ -75,7 +76,7 @@ With the probability scores, you can predict the final event boundary following 
 python test.py --ver $VERSION_NAME_YOU_WANT
 ```
 
-If you want ensemble MAE-GEBD models as well, put MAE-GEBD models in *ensemble/mae_models*, and then:
+If you want ensemble MAE-GEBD models as well, put MAE-based models in *ensemble/mae_models*, and then:
 ```
 python test_mae.py --ver $VERSION_NAME_YOU_WANT
 ```
