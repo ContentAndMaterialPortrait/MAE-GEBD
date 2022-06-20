@@ -1,6 +1,6 @@
 # MAE-GEBD
 
-This is the code for track 1 of competition LOVEU@CVPR2022.
+This is the code for track 1 of competition LOVEU@CVPR2022.[paper](https://arxiv.org/abs/2206.08610)
 
 We have two kinds of models. One of them is MAE-based models, the other is base model. Base models is 
 inherited from [LOVEU-CVPR2021](https://github.com/hello-jinwoo/LOVEU-CVPR2021). And we applied a series improvement on it.
