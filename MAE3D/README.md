@@ -1,6 +1,7 @@
 
-### linux path
-~/code/cvpr2022-workshop/GEBD-MAEpro
+
+### Materials 
+You can download models [here](https://drive.google.com/drive/folders/11OkI6SeRLd7Ewc9JyuoCUSHb29bu4foN).All Mae models are in "mae_based model.zip", including fintune and pretrain.
 
 ### 1、pretrain
 ```bash
